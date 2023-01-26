@@ -397,8 +397,8 @@ header {
 
 .editor-top-block {
   position: relative;
+  top: -37px;
   text-align: center;
-  top: -31px;
 }
 
 .editor-btn {
@@ -406,9 +406,9 @@ header {
   font-weight: 700;
   font-size: 21px;
   line-height: 22px;
-  width: 390px;
   padding: 31px 195px;
   background-color: #8D81AC;
+  border: none;
   border-radius: 40px;
   color: #fff;
   -webkit-transition: all 0.3s linear;
@@ -428,7 +428,7 @@ header {
   font-size: 14px;
   line-height: 15px;
   color: #848E97;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .editor-content {
@@ -454,6 +454,7 @@ header {
   font-size: 54px;
   line-height: 54px;
   color: #635C73;
+  text-transform: uppercase;
 }
 
 .editor-text {
@@ -470,6 +471,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 30px;
 }
 
@@ -486,7 +495,7 @@ header {
   background-color: #f2f2f2;
   border: 1px lightgray solid;
   border-radius: 8px;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 .git-btn a {
@@ -528,7 +537,7 @@ body {
   }
 
   .editor-top-block {
-    top: -10px;
+    top: -36px;
   }
 }
 
@@ -612,6 +621,13 @@ body {
   }
 }
 
+@media (max-width: 680px) {
+  .editor-btn {
+    padding: 25px 120px;
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 662px) {
   .sub-menu {
     left: 78px;
@@ -619,12 +635,6 @@ body {
 
   .nav_menu_link {
     padding: 0 15px;
-  }
-
-  .editor-top-block {
-    width: 300px;
-    padding: 28px 150px;
-    font-size: 16px;
   }
 }
 
@@ -651,6 +661,30 @@ body {
 
   .header_wrapper {
     width: 104%;
+  }
+}
+
+@media (max-width: 480px) {
+  .editor-top-block {
+    top: -30px;
+  }
+
+  .editor-btn {
+    padding: 22px 100px;
+  }
+
+  .editor-title {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .editor-text {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .git-btn a {
+    padding: 0 6px;
   }
 }
 
@@ -690,6 +724,30 @@ body {
   .header_info-parameters {
     font-size: 14px;
     line-height: 14px;
+  }
+}
+
+@media (max-width: 427px) {
+  .editor-top-block {
+    top: -25px;
+  }
+
+  .editor-btn {
+    padding: 18px 40px;
+  }
+
+  .git-btn {
+    margin: 10px 5px;
+  }
+
+  .git-btn a {
+    font-size: 12px;
+    padding: 0 4px;
+  }
+
+  .git-btn span {
+    font-size: 12px;
+    padding: 9px;
   }
 }
 
