@@ -1,0 +1,12 @@
+@mixin d-f-space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin font-header {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+}

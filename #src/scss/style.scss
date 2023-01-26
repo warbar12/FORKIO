@@ -1,17 +1,12 @@
-body{
-  font-size: 25px;
-  display: flex;
-}
-span{
-  font-size: 20px;
-  @media (max-width: 750px) {
-    font-size: 15px;
-  }
-}
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,normal,700);
+@import '_reset.scss';
+@import "_var.scss";
+@import "_mixin.scss";
+@import "_container.scss";
+@import "_header.scss";
+@import "_editor.scss";
 
-div{
-  font-size: 20px;
-  @media (max-width: 750px) {
-    font-size: 15px;
-  }
+body{
+  font-family: 'Montserrat';
 }
