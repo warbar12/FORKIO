@@ -5,3 +5,5 @@ function openNav(){
 function closeNav(){
   document.getElementById('myNav').style.width = '0%'
 }
+const imgWidth = document.querySelector('.min-wrapper-img')
+let divice = window.innerWidth;
