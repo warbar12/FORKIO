@@ -1,0 +1,246 @@
+.pricing-background {
+	background: rgba(74, 59, 78, 1);
+}
+
+.pricing-title {
+	font-family: $primary-fonts;
+	font-weight: 700;
+	text-transform: capitalize;
+	text-align: center;
+	color: $title-color;
+	font-size: rem(48);
+	line-height: rem(50);
+	margin-bottom: 2.8em;
+	padding-top: 2em;
+
+    @media (min-width:320px) and (max-width: 480px) {
+        font-size: rem(42);
+	    line-height: rem(44);
+
+    }
+
+    @media (min-width:480px) and (max-width: 992px) {
+        font-size: rem(28);
+	    line-height: rem(42);
+                
+            }
+    
+}
+.pricing_background-img {
+	background-image: url("../img/subscription-section/subscription-bg.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.pricing__content {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1em;
+	justify-content: center;
+	padding-bottom: 6em;
+
+    @media (min-width:320px) and (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+	    row-gap: 4.7em;
+
+
+    }
+
+    @media (min-width:480px) and (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+	    column-gap: 1.6em;
+        row-gap: 4.7em;
+                
+    }
+
+	:nth-child(1) {
+		:nth-child(3) {
+			font-size: rem(16);
+			line-height: rem(18);
+			margin-bottom: 5.4em;
+			text-transform: capitalize;
+			text-align: center;
+			width: 211px;
+		}
+	}
+
+
+	:nth-child(3) {
+		margin-top: -55px;
+		@media (min-width:320px) and (max-width: 480px) {
+			margin-top: 0;
+		}
+
+		@media (min-width:480px) and (max-width: 992px) {
+				.pricing__content {
+					&-wrap {
+						&-title, &-info {
+							margin: 0px;
+							margin-left: auto;
+						}
+					}
+				}
+		}
+
+		:nth-child(1) {
+			background: rgba(67, 48, 70, 0.84);
+            width: 299px;
+            text-align: center;
+
+           
+
+		}
+
+		:nth-child(2) {
+			background: rgba(74, 55, 77, 0.84);
+            width: 299px;
+            text-align: center;
+
+
+			:nth-child(1) {
+				font-size: rem(82);
+				line-height: rem(90);
+				background: none;
+			}
+
+			:nth-child(3) {
+				margin-top: 40px;
+				margin-bottom: 120px;
+			}
+		}
+	}
+
+	:nth-child(2) {
+		@media (min-width:480px) and (max-width: 992px) {
+				.pricing__content {
+					&-wrap {
+						&-title, &-info {
+							margin: 0px;
+							margin-right: auto;
+						}
+					}
+				}
+		}
+	}
+
+	:nth-child(4) {
+		@media (min-width:480px) and (max-width: 992px) {
+				.pricing__content {
+					&-wrap {
+						&-title, &-info {
+							margin: 0px;
+							margin-right: auto;
+						}
+					}
+				}
+		}
+	}
+
+	&-wrap {
+		:nth-child(2) {
+			:nth-child(3) {
+				margin-top: 20px;
+			}
+		}
+
+		&-title {
+			font-family: $primary-fonts;
+			font-weight: 400;
+			font-size: rem(24);
+			display: block;
+			color: $secondary-text-color;
+			text-transform: uppercase;
+			text-align: center;
+			padding-block: 2.2em;
+			background: rgba(255, 255, 255, 0.06);
+            width: 255px;
+            margin: 0 auto;
+        
+		}
+
+		&-info {
+			@include flex;
+			flex-direction: column;
+			background: rgba(255, 255, 255, 0.11);
+            width: 255px;
+            margin: 0 auto;
+
+			&-text,
+			&-personal,
+			&-purchase {
+				display: inline-block;
+				font-family: $primary-fonts;
+				font-weight: 400;
+				color: $secondary-text-color;
+			}
+
+			&-price {
+				font-family: $primary-fonts;
+				font-weight: 700;
+				font-size: rem(60);
+				line-height: rem(90);
+				color: $secondary-text-color;
+				margin-top: .5em;
+				margin-bottom: .2em;
+			}
+
+			&-text {
+				position: relative;
+				font-size: rem(14);
+				line-height: rem(16);
+				margin-bottom: 4.5em;
+				text-transform: uppercase;
+			}
+
+			&-text::before {
+				display: inline-block;
+				position: absolute;
+				content: "";
+				bottom: -2.5em;
+				left: 50%;
+				transform: translate(-50%, 50%);
+				min-width: 60px;
+				height: 5px;
+				background-color: #8D81AC;
+			}
+
+			&-personal {
+				font-size: rem(16);
+				line-height: rem(18);
+				margin-bottom: 4.3em;
+				text-transform: capitalize;
+				text-align: center;
+				max-width: 211px;
+			}
+
+
+			&-purchase {
+				font-size: rem(15);
+				text-transform: uppercase;
+				padding-block: .8em;
+				padding-inline: 2.2em;
+				margin-bottom: 3.7em;
+				background: rgba(255, 255, 255, 0.15);
+				border: none;
+				border-radius: 2.5em;
+				mix-blend-mode: normal;
+			}
+		}
+
+		@media (min-width:480px) and (max-width: 992px) {
+			&:first-child {
+				.pricing__content {
+					&-wrap {
+						&-title, &-info {
+							margin: 0px;
+							margin-left: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
