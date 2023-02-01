@@ -700,7 +700,7 @@ header {
 }
 
 .people-background {
-  background-image: url("/img/people-section/talking-bg.png");
+  background-image: url("../img/people-section/talking-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
