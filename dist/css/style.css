@@ -987,14 +987,14 @@ body {
     margin-bottom: 25px;
   }
   .you-code-title{
-    font-size: 44px;
+    font-size: 40px;
   }
 }
 @media (max-width: 1151px) {
   .you-code-title{
-    font-size: 44px;
+    font-size: 38px;
   }
-  .min-wrapper-img{
+  .you-code-img img{
     width: 678px;
   }
 }
@@ -1015,7 +1015,7 @@ body {
   }
 
   .you-code-title {
-    font-size: 38px;
+    font-size: 35px;
   }
 
   .you-code-img img {
@@ -1027,14 +1027,14 @@ body {
   .nav_item_link {
     padding: 0 15px;
   }
-
+  
   .header_info {
     margin-top: 133px;
   }
 }
 @media (max-width: 900px) {
   .you-code-title{
-    font-size: 25px;
+    font-size: 29px;
   }
   .you-code-img img{
     width: 400px;
