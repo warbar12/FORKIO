@@ -955,12 +955,13 @@ body {
 
 
 @media (max-width: 1413px) {
-  .min-wrapper-img{
+  .you-code-img img{
     width: 820px;
   }
 }
+
 @media (max-width: 1341px) {
-  .min-wrapper-img{
+  .you-code-img img{
     width: 678px;
   }
 }
@@ -1035,7 +1036,7 @@ body {
   .you-code-title{
     font-size: 25px;
   }
-  .min-wrapper-img{
+  .you-code-img img{
     width: 400px;
   }
 }
