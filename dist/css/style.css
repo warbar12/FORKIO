@@ -406,6 +406,7 @@ header {
   line-height: 22px;
   padding: 31px 195px;
   background-color: #8D81AC;
+  border: 3px solid #8D81AC;
   border: none;
   border-radius: 40px;
   color: #fff;
@@ -417,7 +418,6 @@ header {
 .editor-btn:hover {
   background-color: #fff;
   color: #8D81AC;
-  border: 3px solid #8D81AC;
 }
 
 .editor-days {
